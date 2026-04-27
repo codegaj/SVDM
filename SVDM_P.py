@@ -393,7 +393,7 @@ def eval_model():
 
     # Initialize model
     model = SVDMModel().to(device)
-    model.load_state_dict(torch.load('./SVDM/GF7/GF7_model.pth'))
+    model.load_state_dict(torch.load('./SVDM/GF7_model.pth'))
 
     # fusion_model = Pannet().to(device)
     # fusion_model = FusNet().to(device)
