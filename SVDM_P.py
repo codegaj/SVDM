@@ -194,7 +194,7 @@ class SVDMModel(nn.Module):
         offset, spek, spak0 = self.loc_net(coords)
 
         spak0 = spak0.reshape(batch_size, self.ls*4, self.ls*4, 4)
-        spak0 = spak0[:, 1::4, 1::4, :]
+        spak0 = spak0[:, 0::4, 0::4, :]
 
         spek = spek.reshape(batch_size, self.ls*4, self.ls*4, 5)
 
